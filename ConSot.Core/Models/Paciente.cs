@@ -3,13 +3,13 @@
     public class Paciente
     {
 
-        public int Id { get; set; }
+        public int PacienteId { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
 
         public Paciente(int id, string nombres, string apellidos)
         {
-            Id = id;
+            PacienteId = id;
             Nombres = nombres;
             Apellidos = apellidos;
         }

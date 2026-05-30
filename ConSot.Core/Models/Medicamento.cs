@@ -2,14 +2,14 @@
 {
     public class Medicamento
     {
-        public int Id { get; set; }
+        public int MedicamentoId { get; set; }
         public string Nombre { get; set; }
-        public int Existencia { get; set; }
+        public decimal Existencia { get; set; }
         public string Presentacion { get; set; }
 
-        public Medicamento(int id, string nombre, int existencia, string presentacion)
+        public Medicamento(int id, string nombre, decimal existencia, string presentacion)
         {
-            Id = id;
+            MedicamentoId = id;
             Nombre = nombre;
             Existencia = existencia;
             Presentacion = presentacion;
