@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConSot.Core.Models
+﻿namespace ConSot.Core.Models
 {
-    internal class RenglonReceta
+    public class RenglonReceta
     {
         public int RenglonRecetaId { get; set; }
-        public int Recetaid { get; set; }
+        public int RecetaId { get; set; }
         public int MedicamentoId { get; set; }
         public decimal CantidadRecetada { get; set; }
         public decimal CantidadSurtida { get; set; }
 
-        public RenglonReceta( int id, int recetaid, int medicamentoId, decimal cantidadRecetada, decimal cantidadSurtida)
+        public RenglonReceta(int id, int recetaId, int medicamentoId, decimal cantidadRecetada, decimal cantidadSurtida)
         {
             RenglonRecetaId = id;
-            Recetaid = recetaid;
+            RecetaId = recetaId;
             MedicamentoId = medicamentoId;
             CantidadRecetada = cantidadRecetada;
             CantidadSurtida = cantidadSurtida;
-        }} 
-
+        }
     }
+
 }
